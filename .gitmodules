@@ -1,0 +1,21 @@
+[submodule "meta/dotbot"]
+	path = meta/dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "plugins/vscode"]
+	path = plugins/vscode
+	url = https://github.com/hujianxin/dotbot-vscode
+[submodule "plugins/pacaur"]
+	path = plugins/pacaur
+	url = https://github.com/ajlende/dotbot-pacaur
+[submodule "plugins/yaourt"]
+	path = plugins/yaourt
+	url = https://github.com/niklas-heer/dotbot-yaourt
+[submodule "plugins/golang"]
+	path = plugins/golang
+	url = https://github.com/delicb/dotbot-golang
+[submodule "plugins/pip"]
+	path = plugins/pip
+	url = https://github.com/sobolevn/dotbot-pip
+[submodule "plugins/env"]
+	path = plugins/env
+	url = https://github.com/qobilidop/dotbot-env

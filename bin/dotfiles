@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+set -e
+
+# BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BASE_DIR=$PWD
+META_DIR="${BASE_DIR}/meta"
+CONFIG_DIR="${META_DIR}/configs"
+PLUGINS_DIR="${BASE_DIR}/plugins"
+
+git submodule update --init --recursive --remote
+
+dotbot/bin/dotbot -d $BASE_DIR -p "${PLUGINS_DIR}/golang/go.py" -p "${PLUGINS_DIR}/env/env.py" -p "${PLUGINS_DIR}/pip/pip.py" -p "${PLUGINS_DIR}/pacaur/pacaur.py" -p "${PLUGINS_DIR}/yaourt/yaourt.py" -p "${PLUGINS_DIR}/vscode/vscode.py" -c "${META_DIR}/base.yaml"
+
+for task in ${@}; do
+    ./dotbot/bin/dotbot -d $BASE_DIR -p "${PLUGINS_DIR}/golang/go.py" -p "${PLUGINS_DIR}/env/env.py" -p "${PLUGINS_DIR}/pip/pip.py" -p "${PLUGINS_DIR}/pacaur/pacaur.py" -p "${PLUGINS_DIR}/yaourt/yaourt.py" -p "${PLUGINS_DIR}/vscode/vscode.py" -c "${CONFIG_DIR}/${task}.yaml"
+done
