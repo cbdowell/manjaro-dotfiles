@@ -1,0 +1,5 @@
+- link:
+    ~/.config/terminator:
+        path: config/terminator
+        create: true
+        force: true

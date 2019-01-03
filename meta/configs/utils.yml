@@ -1,0 +1,17 @@
+- pacman:
+    - gtop
+    - glances
+    - nmon
+    - hub
+    - ack
+    - the_silver_searcher
+    - peco
+    - httpie
+    - jq
+    - fzf
+    - z
+    - thefuck
+    - keychain
+
+- shell:
+    - eval "$(hub alias -s)"

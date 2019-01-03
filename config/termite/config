@@ -1,68 +1,50 @@
 [options]
-scroll_on_output = false
-scroll_on_keystroke = true
-audible_bell = false
-mouse_autohide = false
-allow_bold = true
-dynamic_title = true
-urgent_on_bell = true
-clickable_url = true
-font = Monospace 10
-scrollback_lines = 10000
-search_wrap = true
+mouse_autohide = true
+font = Liberation Mono for Powerline 11
+scrollback_lines = 0
+hyperlinks = true
 
-# "system", "on" or "off"
-cursor_blink = system
-
-# "block", "underline" or "ibeam"
-cursor_shape = block
-
-# Hide links that are no longer valid in url select overlay mode
-filter_unmatched_urls = true
+# constrain WM resize operations to character size
+size_hints = true
 
 [colors]
-# if unset, will reverse foreground and background
-highlight = #2f2f2f
+# DarkGrey
+background = #282828
 
-# gjm
-# special
-foreground      = #c5c5c5
-foreground_bold = #c5c5c5
-cursor          = #c5c5c5
-background      = #1c1c1c
+# White
+foreground = #ebdbb2
+foreground_bold = #ebdbb2
 
-background = rgba(0, 0, 0, 0.8)
+# Black + DarkGrey
+color0 = #282828
+color8 = #928374
 
-# black
-color0  = #1c1c1c
-color8  = #666666
+# DarkRed + Red
+color1 = #cc241d
+color9 = #fb4934
 
-# red
-color1  = #ff005b
-color9  = #ff00a0
+# DarkGreen + Green
+color2 = #98971a
+color10 = #b8bb26
 
-# green
-color2  = #cee318
-color10 = #ccff00
+# DarkYellow + Yellow
+color3 = #d79921
+color11 = #fabd2f
 
-# yellow
-color3  = #ffe755
-color11 = #ff9f00
+# DarkBlue + Blue
+color4 = #458588
+color12 = #83a598
 
-# blue
-color4  = #048ac7
-color12 = #48c6ff
+# DarkMagenta + Magenta
+color5 = #b16286
+color13 = #d3869b
 
-# magenta
-color5  = #833c9f
-color13 = #be67e1
+# DarkCyan + Cyan
+color6 = #689d6a
+color14 = #8ec07c
 
-# cyan
-color6  = #0ac1cd
-color14 = #63e7f0
+# LightGrey + White
+color7 = #a89984
+color15 = #ebdbb2
 
-# white
-color7  = #e5e5e5
-color15 = #f3f3f3
-
-[hints]
+# vim: ft=dosini cms=#%s

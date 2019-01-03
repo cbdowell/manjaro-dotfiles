@@ -1,3 +1,10 @@
 [user]
 	email = cbdowell@gmail.com
 	name = cbdowell
+	signingkey = F61BE3117E104A8A
+[url "git@github.com:"]
+	insteadOf = https://github.com/
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/bin/gpg

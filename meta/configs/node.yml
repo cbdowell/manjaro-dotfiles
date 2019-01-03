@@ -1,3 +1,6 @@
 - link:
     ~/.npmrc: config/node/npmrc
     ~/.nvmrc: config/node/nvmrc
+
+- shell:
+    - [bash ./config/node/install, Installing Node Packages]
