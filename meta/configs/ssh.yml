@@ -1,0 +1,12 @@
+
+- link:
+    ~/.ssh/config:
+        path: config/ssh/config
+        relink: true
+        create: true
+
+- shell:
+    - ssh-keygen -t rsa -b 4096 -C "cbdowell@gmail.com"
+    - eval "$(ssh-agent -s)"
+    - ssh-add ~/.ssh/id_rsa
+    - xclip -sel clip < ~/.ssh/id_rsa.pub

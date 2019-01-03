@@ -1,0 +1,14 @@
+- link:
+    ~/.config/Code/User/snippets:
+        path: config/vscode/snippets
+        create: true
+    ~/.config/Code/User/settings.json:
+        path: config/vscode/settings.json
+        create: true
+    ~/.config/Code/User/keybindings.json:
+        path: config/vscode/keybindings.json
+        create: true
+
+- vscodefile:
+    file: config/vscode/extensions
+    insiders: false
